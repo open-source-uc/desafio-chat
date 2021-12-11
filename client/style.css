@@ -1,0 +1,66 @@
+:root {
+  --azul-1: #0176de;
+  --azul-2: #173f8a;
+  --azul-3: #03122e;
+  --amarillo-1: #fec60d;
+  --gris-1: #c4c4c4;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: bottom no-repeat url("/client/assets/wave-1.svg"), bottom no-repeat url("/client/assets/wave-2.svg"),
+    bottom no-repeat url("/client/assets/wave-3.svg");
+}
+
+ol#messages {
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+}
+
+ol#messages > li {
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+ol#messages > li > *:first-child {
+  font-weight: bolder;
+}
+ol#messages > li > *:first-child::after {
+  content: ": ";
+}
+
+.userContainer {
+  height: 60px;
+  background: var(--azul-1);
+}
+
+.mainContainer {
+  margin: auto auto;
+  max-width: 680px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+#messages {
+  height: 560px;
+  border: solid var(--gris-1) 5px;
+  border-radius: 8px;
+}
+
+#send {
+  display: flex;
+}
+
+#contenido {
+  flex: 1;
+}
+
+main {
+  margin: auto 0;
+}

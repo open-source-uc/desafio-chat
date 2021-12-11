@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/client/index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="userContainer">
+        <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" />
+      </div>
+      <div class="mainContainer">
+        <h1>uChat</h1>
+        <div class="chatContainer">
+          <ol id="messages"></ol>
+          <div id="send">
+            <input type="textarea" name="contenido" id="contenido" cols="30" rows="10" />
+            <button type="submit" id="send">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
